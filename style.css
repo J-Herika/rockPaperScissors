@@ -9,13 +9,17 @@
   font-weight: 900;
   font-style: normal;
 }
-
+body {
+  min-height: 100vh;
+}
 body {
   font-family: "Rubik Mono One";
   background-color: #fffaff;
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 button {
   background-color: #fffaff;
@@ -78,4 +82,62 @@ h1 {
   cursor: pointer;
 }
 
+/* Main Section */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+#display-content {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 220px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.choice-img {
+  width: 300px;
+  height: 300px;
+  background-color: #7f7eff;
+}
+.choice-img > img {
+  width: 300px;
+}
+.choice-txt {
+  font-size: 62px;
+}
 
+/* Buttons */
+#human-choices {
+  /* display: flex;
+  justify-content: center;
+  gap: 30px; */
+}
+.human-choice {
+  font-family: "Rubik Mono One", sans-serif;
+  font-weight: 100;
+  background-color: #7f7eff;
+  font-size: 43px;
+  padding: 10px 20px;
+  text-align: center;
+  /* border-radius: 10px; */
+  display: flex;
+  justify-content: center;
+}
+.human-choice:hover {
+  background-color: #fffaff;
+  color: #7f7eff;
+}
+footer {
+  background-color: #000000;
+  color: #7f7eff;
+  font-weight: 100;
+  font-size: 12px;
+  padding: 3px 0;
+}

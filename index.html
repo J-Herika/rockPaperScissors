@@ -11,7 +11,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Rock Paper Scissors</title>
   </head>
   <body>
@@ -33,5 +33,23 @@
         />
       </button>
     </header>
+    <main>
+      <div id="display-content">
+        <div class="human-side content">
+          <div id="human-choice-img" class="choice-img"></div>
+          <p id="human-choice-txt" class="choice-txt">ROCK</p>
+        </div>
+        <div class="computer-side content">
+          <div id="computer-choice-img" class="choice-img"></div>
+          <p id="computer-choice-txt" class="choice-txt">PAPER</p>
+        </div>
+      </div>
+      <div id="human-choices">
+        <button class="human-choice">ROCK</button
+        ><button class="human-choice">PAPER</button
+        ><button class="human-choice">Scissors</button>
+      </div>
+    </main>
+    <footer><p>Made by: @DueBase</p></footer>
   </body>
 </html>

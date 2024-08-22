@@ -1,6 +1,19 @@
 //  1 - create the choices
 const CHOICES = ["rock", "paper", "scissors"];
 
+const humanScoreEl = document.querySelector("#human-score");
+const computerScoreEl = document.querySelector("#computer-score");
+const resetBtnEl = document.querySelector("#reset-btn");
+
+const humanChoiceImgEl = document.querySelector("#human-choice-img");
+const humanChoiceTxtEl = document.querySelector("#human-choice-txt");
+
+const computerChoiceImgEl = document.querySelector("#computer-choice-img");
+const computerChoiceTxtEl = document.querySelector("#computer-choice-txt");
+
+const humanChoicesBtnsEl = document.querySelector("#human-choices");
+
+
 let humanScore = 0;
 let computerScore = 0;
 
@@ -47,8 +60,11 @@ function getComputerChoice(choices) {
 }
 
 function getHumanChoice(choices) {
-  let humanInput = prompt("Choice Rock,Paper or Scissors");
-  humanInput = humanInput.toLowerCase();
+  let humanInput;
+  humanChoicesBtnsEl.addEventListener("click", (e) => {
+    humanInput = e.target.textContent
+    humanInput = humanInput.toLowerCase();
+  });
   console.log(humanInput);
   let choice;
   switch (humanInput) {
@@ -65,3 +81,7 @@ function getHumanChoice(choices) {
       alert("You have entered an Invalid input...");
   }
 }
+
+
+// i wanted it so when i press a choice then the game starts
+// it gets my choice first then the computer then playes the round
