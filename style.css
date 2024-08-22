@@ -1,0 +1,75 @@
+.rubik-mono-one-regular {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.orbitron{
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  font-family: "Rubik Mono One";
+  background-color: #fffaff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+button {
+  background-color: #fffaff;
+  border: none;
+  padding: none;
+}
+
+header {
+  /* background-color: #b2b0b2;  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 200px;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size: 62px;
+  font-weight: 100;
+}
+#logo > p{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  color: #8723f9;
+}
+
+#scores {
+  font-family: orbitron;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#human-score,
+#computer-score {
+  padding: 0;
+  font-size: 100px;
+  font-weight: bold;
+}
+#score-spacer {
+  width: 20px;
+  height: 100px;
+  background-color: #7f7eff;
+}
+
+#reload-img {
+  width: 100px;
+  height: 100px;
+}
+#reset-btn {
+  border-radius: 100%;
+}
