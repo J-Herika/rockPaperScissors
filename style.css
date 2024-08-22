@@ -3,7 +3,7 @@
   font-weight: 400;
   font-style: normal;
 }
-.orbitron{
+.orbitron {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
@@ -28,7 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 200px;
+  padding: 30px 100px 0;
 }
 
 h1,
@@ -36,14 +36,14 @@ p {
   margin: 0;
   padding: 0;
 }
-h1{
+h1 {
   font-size: 62px;
   font-weight: 100;
-}
-#logo > p{
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 500;
   color: #8723f9;
+}
+#logo > p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
 }
 
 #scores {
@@ -73,3 +73,9 @@ h1{
 #reset-btn {
   border-radius: 100%;
 }
+#reset-btn:hover {
+  rotate: 30deg;
+  cursor: pointer;
+}
+
+
